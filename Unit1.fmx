@@ -20,7 +20,7 @@ object Form1: TForm1
     end
     item
       Color = xFF52B7E5
-      Offset = 0.748447179794311600
+      Offset = 0.748447179794311500
     end
     item
       Color = xFF0C7D81
@@ -33,12 +33,69 @@ object Form1: TForm1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 3
   object ScaledLayout1: TScaledLayout
-    OriginalWidth = 649.000000000000000000
-    OriginalHeight = 481.000000000000000000
-    Size.Width = 649.000000000000000000
-    Size.Height = 481.000000000000000000
+    Align = Client
+    OriginalWidth = 640.000000000000000000
+    OriginalHeight = 480.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
+    object Contenedor: TPanel
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rectangle1: TRectangle
+        Align = Client
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF4CBAF4
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF0F396C
+            Offset = 0.055900622159242630
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 480.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object OrdenesContenedor: TPanel
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 0
+      object Rectangle2: TRectangle
+        Align = Client
+        Fill.Kind = Gradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFF4CBAF4
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xFF0F396C
+            Offset = 0.055900622159242630
+          end>
+        Fill.Gradient.StartPosition.X = 0.500000000000000000
+        Fill.Gradient.StartPosition.Y = 1.000000000000000000
+        Fill.Gradient.StopPosition.X = 0.499999970197677600
+        Fill.Gradient.StopPosition.Y = 0.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 480.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
   end
 end
